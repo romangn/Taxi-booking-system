@@ -1,0 +1,31 @@
+<html XMLns="http://www.w3.org/1999/xHTML" >
+<head>
+	<script type ="text/javascript" src="findBookings.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>
+	<a href="admin.htm">Administrate</a>
+	<a href="booking.htm">Make a new booking</a>
+	</h1>
+<span id="status">Status</span><br />
+<table id= "tbl" border="1"></table>
+<p id="p1"></p>
+     <button onclick = "getDetails();" ><p>Show bookings </p></button>      
+	   <form action="javascript:void(0);" >           
+            <table>
+			 <tr>
+				<td><p>Booking number : </p> </td>
+				<td><input type="number" name="chosenBookingNumber" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="left">
+					<button type="reset"  style="width: 100px"><p>Clear</p></button>
+					<button type="submit"  onclick="assignCar()" style="width: 100px"><p>Assign Car</p></button>
+				</td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html XMLns="http://www.w3.org/1999/xHTML" >
+<head>
+	<script type ="text/javascript" src="processBookingDetails.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>
+	<a href="admin.htm">Administrate</a>
+	<a href="booking.htm">Make a new booking</a>
+	</h1>
+<span id="status">Status</span><br />
+		<form action ="javascript:void(0);" >
+			<h2>Please enter your details:</h2>
+			<table>
+				<tr>
+					<td><p>Name: </p></td>
+					<td><input type="text" name="customerName" /></td>
+				</tr>
+				<tr>
+					<td><p>Street: </p></td>
+					<td><input type="text" name="streetName" /></td>
+				</tr>
+				<tr>
+					<td><p>Street Number: </p></td>
+					<td><input type="number" name="streetNumber" /></td>
+				</tr>
+				<tr>
+					<td><p>Unit number: </p></td>
+					<td><input type="text" name="unitNumber" /></td>
+				</tr>
+				<tr>
+					<td><p>Suburb: </p></td>
+					<td><input type="text" name="suburb" /></td>
+				</tr>
+				<tr>
+					<td><p>Destination: </p></td>
+					<td><input type="text" name="destination" /></td>
+				</tr>
+				<tr>
+					<td><p>Phone number: </p></td>
+					<td><input type="number" name="phoneNumber" /></td>
+				</tr>
+				<tr>
+					<td><p>Date for pickup:</p> </td>
+					<td><input type="date" min="2015-06-08" max="2015-12-31" name="pickupDate" /></td>
+				</tr>
+				<tr>
+					<td><p>Pickup time: </p></td>
+					<td><input type="time" name="pickupTime" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td align="center">
+						<button type="reset"  style="width: 100px"><p>Clear</p></button>
+						<button type="submit" id = "btn"  onclick="checkFormInput()" style="width: 100px"><p>Send details</p></button>
+					</td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>
